@@ -1,4 +1,4 @@
-CREATE DATABASE "lab1";
+CREATE DATABASE lab1;
 
 \c lab1
 

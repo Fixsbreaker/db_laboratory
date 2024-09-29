@@ -1,6 +1,6 @@
 CREATE DATABASE lab1;
 
-\c lab1
+-- \c lab1
 
 CREATE TABLE users (
     id SERIAL,
@@ -29,5 +29,3 @@ CREATE TABLE tasks (
 DROP TABLE tasks;
 
 DROP DATABASE lab1;
-
-

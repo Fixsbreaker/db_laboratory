@@ -32,7 +32,7 @@ UPDATE countries SET region_id = 1 WHERE region_id IS NULL; -- 12
 
 UPDATE countries SET population = population * 1.1 RETURNING country_name, population AS new_population; -- 13
 
-DELETE FROM countries WHERE population < 100000; -- 14
+DELETE FROM countries WHERE population < 10000000; -- 14
 
 -- DELETE FROM countries RETURNING *;
 -- DELETE FROM countries_new RETURNING *;
@@ -41,15 +41,6 @@ DELETE FROM countries_new -- 15
 USING countries
 WHERE countries_new.country_id = countries.country_id
 RETURNING countries_new.*;
-
-DELETE FROM countries -- 16
-RETURNING *;
-
-
-
-
-
-
 
 
 

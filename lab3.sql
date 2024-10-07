@@ -45,7 +45,6 @@ SELECT name FROM customers WHERE city = 'Almaty';
 SELECT * FROM departments WHERE budget > 60000 ORDER BY budget ASC, code DESC;
 
 -- 16
-UPDATE departments SET budget = budget * 0.90 WHERE budget = (SELECT MIN(budget) FROM departments);
 
 -- 17
 UPDATE employees SET department = (SELECT code FROM departments WHERE name = 'IT')
@@ -56,6 +55,5 @@ DELETE FROM employees WHERE department = (SELECT code FROM departments WHERE nam
 
 -- 19
 DELETE FROM employees RETURNING *;
-
 
 
